@@ -4,19 +4,6 @@ import './index.css';
 
 // class Square extends React.Component {
 
-//     render() {
-//         return (
-//             <button
-//                 className="square"
-//                 onClick={() => this.props.onClick()}
-//             >
-//                 {this.props.value}
-//             </button>
-//         );
-//     }
-// }
-
-
 // since Square does not have any state, a function can be used
 // since it is a function, this is not needed. Class needed this and the function notation
 function Square(props) {
@@ -27,14 +14,6 @@ function Square(props) {
     );
 }
 class Board extends React.Component {
-    // constructor(props) {
-    //     super(props);
-    //     this.state = {
-    //         squares: Array(9).fill(null),
-    //         xIsNext: true,
-    //     };
-    // };
-
 
     renderSquare(i) {
         return (
@@ -46,14 +25,6 @@ class Board extends React.Component {
     }
 
     render() {
-        // const winner = calculateWinner(this.state.squares);
-        // let status;
-        // if (winner) {
-        //     status = 'Winner: ' + winner;
-        // } else {
-        //     status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
-        // }
-
         return (
             <div>
                 {/* <div className="status">{status}</div> */}
